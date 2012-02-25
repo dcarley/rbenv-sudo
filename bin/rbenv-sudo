@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+ARGS="$@"
+RBENV_ROOT="$(rbenv root)"
+RBENV_PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin"
+
+sudo sh -c '
+    export PATH="'${RBENV_PATH}':${PATH}"
+    '"${ARGS}"'
+'
