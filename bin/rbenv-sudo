@@ -22,11 +22,19 @@
 
 set -eu
 
-ARGS="$@"
+ARGS=$1
+shift 1
+
+for ARG in "$@"; do
+    # Quote arguments that contain whitespace.
+    [[ $ARG =~ [[:space:]] ]] && ARG="\"$ARG\""
+    ARGS="$ARGS $ARG"
+done
+
 RBENV_ROOT="$(rbenv root)"
 RBENV_PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin"
 
-sudo sh -c '
-    export PATH="'${RBENV_PATH}':${PATH}"
-    '"${ARGS}"'
-'
+sudo sh -c "
+    export PATH=\"${RBENV_PATH}:\${PATH}\"
+    command ${ARGS}
+"
