@@ -22,7 +22,6 @@
 
 set -eu
 
-RBENV_ROOT=$(rbenv root)
 ROOT_PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 ROOT_PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${ROOT_PATH}"
 
