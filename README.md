@@ -27,7 +27,7 @@ system binaries of the same name.
 
 1. Clone `rbenv-sudo` into the plugins directory:
 
-        clone git://github.com/dcarley/rbenv-sudo.git ~/.rbenv/plugins/rbenv-sudo
+        git clone git://github.com/dcarley/rbenv-sudo.git ~/.rbenv/plugins/rbenv-sudo
 
 ## Usage
 
