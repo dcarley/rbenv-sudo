@@ -25,4 +25,4 @@ set -eu
 ROOT_PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
 ROOT_PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${ROOT_PATH}"
 
-eval command sudo env PATH=\"\$ROOT_PATH\" \"\$@\"
+eval command sudo -E env PATH=\"\$ROOT_PATH\" \"\$@\"
