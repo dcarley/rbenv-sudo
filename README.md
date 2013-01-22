@@ -20,6 +20,12 @@ system binaries of the same name.
 
 ## Installation
 
+In you use [rbenv-installer](https://github.com/fesplugas/rbenv-installer):
+
+    rbenv plugin dcarley:rbenv-sudo
+
+Otherwise:
+
 1. Setup [rbenv](https://github.com/sstephenson/rbenv)
 1. Make sure you have a plugins directory:
 
