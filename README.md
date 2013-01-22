@@ -20,7 +20,7 @@ system binaries of the same name.
 
 ## Installation
 
-In you use [rbenv-installer](https://github.com/fesplugas/rbenv-installer):
+If you use [rbenv-installer](https://github.com/fesplugas/rbenv-installer):
 
     rbenv plugin dcarley:rbenv-sudo
 
