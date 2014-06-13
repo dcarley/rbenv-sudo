@@ -5,10 +5,10 @@ Rubies and Gems from within a `sudo` session.
 
 ## Implementation
 
-It does so by prepending rbenv's `bin/` and `shims/` directories to a
-hardcoded representation of root's `$PATH`. It differs from `rvmsudo` in
-that it doesn't pass your present `$PATH` or any other environment
-variables over to the sudo session, in the hope of damage limitation.
+It does so by prepending rbenv's `bin/` and `shims/` directories to
+root's `$PATH`. It differs from `rvmsudo` in that it doesn't pass your
+present `$PATH` or any other environment variables over to the sudo
+session, in the hope of damage limitation.
 
 It will function with the common sudo configuration of:
 
