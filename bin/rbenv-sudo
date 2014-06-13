@@ -22,7 +22,7 @@
 
 set -eu
 
-ROOT_PATH=`sudo env | grep PATH= | sed s/PATH=//`
+ROOT_PATH=`sudo env | grep ^PATH= | sed s/PATH=//`
 ROOT_PATH="${RBENV_ROOT}/shims:${RBENV_ROOT}/bin:${ROOT_PATH}"
 
 eval command sudo env RBENV_VERSION=\"\${RBENV_VERSION:-}\" PATH=\"\$ROOT_PATH\" \"\$@\"
